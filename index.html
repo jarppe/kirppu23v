@@ -37,10 +37,20 @@
         position: absolute;
         top: 0;
       }
+      @keyframes foo {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.3);
+        }
+      }
       img {
         display:block;
         margin: auto;
         width: 50%;
+        overflow: hidden;
+        animation: foo 1s ease infinite alternate;
       }
     </style>
   </head>
